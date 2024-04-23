@@ -1,0 +1,197 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.FormContainer{
+    background-color: #5d5b8d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.FormWrapper{
+    background-color: azure;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+.logo {
+    color: #5d5b8d;
+    font-weight: bold;
+    font-size: 28px;
+
+  }
+
+  .title {
+    color: #5d5b8d;
+    font-size: 14px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+  input {
+    padding: 15px;
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid #a7bcff;
+    &::placeholder {
+      color: rgb(175, 175, 175);
+    }
+}
+} 
+button {
+    background-color: #7b96ec;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  label{
+    display: flex;
+    align-items: center;
+    color: #5d5b8d;
+    gap: 10px;
+    font-size: 12px;
+    cursor: pointer;
+
+    img{
+        width: 34px;
+    }
+  }
+}
+p{
+    color: #5d5b8d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+}
+.home{
+    background-color: #caa4df;
+    overflow: hidden;
+    
+    .head{
+    display: flex;
+    align-items: center;
+
+    .logo{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+    }
+    .motto{
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        color: #434d6e;
+    }
+    .connect{
+        
+    }
+    }
+
+    
+    .container{
+        border-radius: 10px;
+        display: flex;
+
+        .sidebar{
+            margin-left: 5%;
+            flex: 1;
+            background-color: #423272;
+            height: 100vh;
+
+            .navbar{
+                display: flex;
+                padding: 10px;
+                background-color: #3e3d5c;
+                height: 50px;
+                justify-content: space-between;
+
+                .title{
+                    font-size: 25px;
+                }
+                .user{
+                    display: flex;
+                    gap: 5px;
+                }
+                .userImg{
+                    margin-top: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: white;
+                    object-fit: cover;
+                }
+                .more{
+                    cursor: pointer;
+                }
+                
+            }
+            .search{
+                
+
+                .searchForm{
+                    padding: 10px;
+                    input{
+                        background: transparent;
+                        border: none;
+                        width: auto;
+                        color: white;
+                        outline: none;
+
+                        &::placeholder{
+                            font-size: 15px;
+                            color: lightgray;
+                        }
+                    }
+                }
+                
+                
+            }
+            .userChat{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #694f96;
+                }
+               img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+                }
+                
+                .userChatInfo{
+                    
+                    span{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 12px;
+                        color: lightgray;
+                    }
+                }
+            }
+        }
+        .chat{
+            // margin-top: 5%;
+            background-color:   #434d6e;
+            flex: 2;
+            
+        }
+    }
+}
