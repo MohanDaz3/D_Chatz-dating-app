@@ -121,6 +121,38 @@ p{
                 .user{
                     display: flex;
                     gap: 5px;
+
+                    
+                        .dropdown {
+                            position: relative;
+                          }
+                          
+                          .dropdown-menu {
+                            position: absolute;
+                            top: 60px;
+                            left: -70px;
+                            background-color: #413a3a;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                            padding: 8px;
+                          }
+                          
+                          .dropdown-menu ul {
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                          }
+                          
+                          .dropdown-menu ul li {
+                            padding: 8px 16px;
+                            cursor: pointer;
+                            color: #f0f0f0;
+                          }
+                          
+                          .dropdown-menu ul li:hover {
+                            background-color: #9e8686;
+                          }
                 }
                 .userImg{
                     margin-top: 5px;
@@ -131,9 +163,10 @@ p{
                     object-fit: cover;
                 }
                 .more{
+                    margin-top: 15px;
                     cursor: pointer;
+                    height: 24px;
                 }
-                
             }
             .search{
                 
@@ -178,10 +211,10 @@ p{
                     
                     span{
                         font-size: 18px;
-                        font-weight: 400;
+                        font-weight: 500;
                     }
                     p{
-                        font-size: 12px;
+                        font-size: 14px;
                         color: lightgray;
                     }
                 }
@@ -191,7 +224,202 @@ p{
             // margin-top: 5%;
             background-color:   #434d6e;
             flex: 2;
+            height: 100vh;
             
+
+            .chatScreen{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                img{
+                    margin-top: 100px;
+                    width: 300px;
+                    height: 300px;
+   
+                   }
+             }
+             .promotion{
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 
+                 span{
+                     font-size: 40px;
+                     font-weight: 400;
+                     font-style: italic;
+                     color: white;
+                 }
+             }
+             .chatInfo{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                background-color: #4b48a4;
+                padding: 10px;
+                color: lightgray;
+                
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .userImg{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: white;
+                        object-fit: cover;
+                    }
+                }
+
+                
+
+                .chatIcons{
+                    position: relative;
+                    .camIcon{
+                        width: 30px;
+                         height: 30px;
+                         margin-right: 10px;
+                         cursor: pointer;
+                    }
+                    .phoneIcon{
+                         width: 30px;
+                         height: 30px;
+                         margin-right: 10px;
+                         cursor: pointer;
+                    }
+                    .moreIcon{
+                         width: 30px;
+                         height: 30px;
+                         margin-right: 10px;
+                         cursor: pointer;
+                    }
+
+                    .dropdown-menu2 {
+                        position: absolute;
+                        top: 60px;
+                        left: -30px;
+                        background-color: #413a3a;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        padding: 8px;
+                      }
+                      
+                      .dropdown-menu2 ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                      }
+                      
+                      .dropdown-menu2 ul li {
+                        padding: 8px 16px;
+                        cursor: pointer;
+                        color: #f0f0f0;
+                      }
+                      
+                      .dropdown-menu2 ul li:hover {
+                        background-color: #9e8686;
+                      }
+                }
+             }
+             
+             .messages{
+                background-color: rgb(85, 134, 134);
+                padding: 10px;
+                height: calc(100% - 160px);
+                overflow: scroll;
+
+                .message{
+                    display: flex;
+                    gap: 20px;
+                    margin-bottom: 30px;
+
+                   .messageInfo{
+                    display: flex;
+                    flex-direction: column;
+                    color: rgb(53, 37, 37);
+                    font-weight: 300;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                   }
+                   .messageContent{
+                    max-width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p{
+                        background-color: white;
+                        padding: 10px 20px;
+                        border-radius: 0px 10px 10px 10px;
+                        max-width: max-content;
+                    }
+                    img{
+                        width: 70%;
+                    }
+                   } 
+                   &.owner{
+                    flex-direction: row-reverse;
+                    .messageContent{
+                        align-items: flex-end;
+                        p{
+                            background-color: #323d61;
+                            color: white;
+                            border-radius: 10px 0px 10px 10px;
+                        }
+                    }
+                   
+                   }
+                }
+             }
+
+             .input{
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input{
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: #434d6e;
+                    font-size: 18px;
+
+                    &::placeholder{
+                        color: lightgray;
+                    }
+                }
+                .send{
+                    display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    img{
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                 
+                    button{
+                        border: none;
+                        padding: 10px 15px;
+                        color: white;
+                        background-color: #7b96ec;
+                        cursor: pointer;
+                    }
+             }
+             
+            }
         }
     }
+    
+    
 }
